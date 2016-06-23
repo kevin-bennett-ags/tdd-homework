@@ -22,7 +22,7 @@ describe('Calculator', function() {
 
     // add string
   it('should get the sum from string', function() {
-    console.log(calculator.addString(""));
+    assert.strictEqual(calculator.addString(""), 0);
   });
 
   
