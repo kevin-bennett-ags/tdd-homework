@@ -20,6 +20,7 @@ exports.remainder = function(val1, val2) {
 exports.addString = function(val) {
 	var qc = val.split(",");
 	var sum=0;
+	if(val.indexOf("-1")>-1) throw "negatives not allowed";	
 	if(val=="") return 0;
 	for(var i=0;i<qc.length;i++){
 		sum+= Number(qc[i]); 
