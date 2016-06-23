@@ -20,7 +20,11 @@ describe('Calculator', function() {
     console.log(calculator.remainder(9,2));
   });
 
-  
+    // add string
+  it('should get the sum from string', function() {
+    console.log(calculator.addString(""));
+  });
+
   
   
   
