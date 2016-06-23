@@ -1,7 +1,11 @@
 'use strict';
 
 exports.add = function() {
-  return null
+	 var sum=0;
+	 for(var param in arguments){
+	 	sum+=Number(arguments[param]);
+	 }
+	 return sum;
 }
 
 exports.multiply = function(val1, val2) {
