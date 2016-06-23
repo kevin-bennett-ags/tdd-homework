@@ -15,13 +15,13 @@ describe('Calculator', function() {
     assert.equal(calculator.multiply(2,2), 4);
   });
   
- // test for divide
+  // test of remainder
   it('should get the remainder', function() {
-    console.log(calculator.remainder(2,2))
+    console.log(calculator.remainder(9,2));
   });
 
   
   
-  // test of remainder
+  
   
 });
