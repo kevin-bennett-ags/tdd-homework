@@ -12,6 +12,7 @@ describe('Calculator', function() {
   
   it('should multiply two numbers', function() {
     // your code here
+    assert.equal(calculator.multiply(2,2), 4);
   });
   
   // test for divide
