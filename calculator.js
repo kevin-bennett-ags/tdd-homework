@@ -18,6 +18,6 @@ exports.remainder = function(val1, val2) {
 }
 
 exports.addString = function(val) {
-  return val;
+  return val==""? 0: Number(val);
 }
 
