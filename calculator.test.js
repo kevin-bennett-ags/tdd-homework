@@ -20,7 +20,7 @@ describe('Calculator', function() {
  
   // test of remainder
   it('should get the remainder', function () {
-  	assert.equal(calculator.remainder(5,3), 1)
+  	assert.equal(calculator.remainder(5,3), 2)
   });
 
   
