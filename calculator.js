@@ -17,6 +17,7 @@ exports.multiply = function(val1, val2) {
 exports.addString = function(val1) {
 	var arr = val1.split(",");
 	var total = 0;
+	//console.log(arr.length);
 	for(var i in arr){
 		console.log(parseInt(arr[i]));
 		total+=parseInt(arr[i]);
