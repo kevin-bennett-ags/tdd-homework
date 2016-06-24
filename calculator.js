@@ -14,6 +14,9 @@ exports.multiply = function(val1, val2) {
   return Number(val1) * Number(val2);
 }
 
+exports.addString = function(val1) {
+	return val1;
+}
 // behavior for divide
 
 

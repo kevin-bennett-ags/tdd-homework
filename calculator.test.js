@@ -24,5 +24,9 @@ describe('Calculator', function() {
   	assert.equal(calculator.remainder(5,3), 2)
   });
 
+  it('should accept string', function () {
+  	assert.equal(calculator.addString("string123"), "string123")
+  })
+
   
 });
