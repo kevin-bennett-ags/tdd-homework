@@ -19,8 +19,14 @@ exports.addString = function(val1) {
 	var total = 0;
 	//console.log(arr.length);
 	for(var i in arr){
-		console.log(parseInt(arr[i]));
-		total+=parseInt(arr[i]);
+		
+		if (parseInt(arr[i]) > 0){
+			console.log(parseInt(arr[i]));
+			total+=parseInt(arr[i]);
+		} else {
+			return "negative are not allowed"
+			break;
+		}
 	}
 	return total;
 }

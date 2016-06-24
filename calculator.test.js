@@ -25,7 +25,7 @@ describe('Calculator', function() {
   });
 
   it('should accept string', function () {
-  	assert.equal(calculator.addString("1,2,3,4,5"), 15)
+  	assert.equal(calculator.addString("1,2,-3,4,5"), 15)
   })
 
   
