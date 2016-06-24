@@ -1,13 +1,31 @@
 'use strict';
 
 exports.add = function() {
-  // your code here.
+	 var sum=0;
+	 for(var param in arguments){
+	 	sum+=Number(arguments[param]);
+	 }
+	 return sum;
 }
 
 exports.multiply = function(val1, val2) {
   return Number(val1) * Number(val2);
 }
 
-// behavior for divide
-
 // bahavior for remainder
+exports.remainder = function(val1, val2) {
+  return Number(val1) % Number(val2);
+}
+
+exports.addString = function(val) {
+	var qc = val.split(",");
+	var sum=0;
+	if(val=="") return 0;
+	for(var i=0;i<qc.length;i++){
+		var n = Number(qc[i]);
+		if(n<0) throw "negatives not allowed";
+		sum+= Number(qc[i]); 
+	}		  
+  	return sum;
+}
+

@@ -6,16 +6,26 @@ var calculator = require('./calculator');
 
 describe('Calculator', function() {
   
-  it('should add two numbers', function() {
-    assert.equal(calculator.add(1,1), 2);
+  it('should add numbers', function() {
+    assert.equal(calculator.add(2,2,2,2,2), 10); // test will fail
   });
+  
   
   it('should multiply two numbers', function() {
-    // your code here
+    assert.equal(calculator.multiply(2,2), 4);
   });
   
-  // test for divide
-  
   // test of remainder
+  it('should get the remainder', function() {
+    console.log(calculator.remainder(9,2));
+  });
+
+    // add string
+  it('should get the sum from string', function() {
+    assert.strictEqual(calculator.addString("1,2,3,4,-5"),10);
+  });
+
+  
+  
   
 });
