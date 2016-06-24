@@ -25,7 +25,7 @@ describe('Calculator', function() {
   });
 
   it('should accept string', function () {
-  	assert.equal(calculator.addString("string123"), "string123")
+  	assert.equal(calculator.addString("1,2,3,4"), 10)
   })
 
   
