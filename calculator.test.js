@@ -17,9 +17,11 @@ describe('Calculator', function() {
   });
   
   // test for divide
-
  
   // test of remainder
+  it('should get the remainder', function () {
+  	assert.equal(calculator.remainder(5,3), 1)
+  });
 
   
 });
