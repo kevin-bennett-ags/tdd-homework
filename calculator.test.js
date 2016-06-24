@@ -7,8 +7,9 @@ var calculator = require('./calculator');
 describe('Calculator', function() {
   
   it('should add two numbers', function() {
-    assert.equal(calculator.add(1,1), 2);
-  });
+   // assert.equal(calculator.add(1,1), 2);
+   assert.equal(calculator.add(2,2,2,2,2,2), 12);
+  })
 
   
   it('should multiply two numbers', function() {
