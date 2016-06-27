@@ -1,12 +1,15 @@
 'use strict';
 
+const NEGATIVE_ERROR = 'negatives not allowed',
+      ZERO_ERROR = 'zero is not allowed as divider';
+
 exports.add = function(strArr) {
-  var numArr = strArr.split(',').map(Number),
+  let numArr = strArr.split(',').map(Number),
       total = 0;
 
-  for(var i = 0, l = numArr.length; i < l; i++) {
-    if(numArr[i] < 0) throw new Error('negatives not allowed')
-    total += numArr[i];
+  for(let num of numArr) {
+    if(num < 0) throw new Error(NEGATIVE_ERROR)
+    total += num;
   }
 
   return total;
@@ -18,18 +21,18 @@ exports.multiply = function(val1, val2) {
 
 // behavior for divide
 exports.divide = function(val1, val2) {
-  var num1 = Number(val1),
+  let num1 = Number(val1),
       num2 = Number(val2);
 
-  if(num2 === 0) throw new Error('zero is not allowed as divider')
+  if(num2 === 0) throw new Error(ZERO_ERROR)
   return num1 / num2;
 }
 
 // bahavior for remainder
 exports.remainder = function(val1, val2) {
-  var num1 = Number(val1),
+  let num1 = Number(val1),
       num2 = Number(val2);
 
-  if(num2 === 0) throw new Error('zero is not allowed as divider')
+  if(num2 === 0) throw new Error(ZERO_ERROR)
   return num1 % num2;
 }

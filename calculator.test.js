@@ -1,8 +1,7 @@
 'use strict';
 
-var assert = require('assert');
-
-var calculator = require('./calculator');
+const assert = require('assert');
+const calculator = require('./calculator');
 
 describe('Calculator', function() {
 
@@ -11,7 +10,7 @@ describe('Calculator', function() {
       assert.equal(calculator.add('1,2,3,4,5'), 15);
     });
     it('should throw error for negative number', function() {
-      assert.throws(function() {
+      assert.throws(() => {
         return calculator.add('1,2,3,4,-5');
       }, Error, 'negatives not allowed');
     });
@@ -29,7 +28,7 @@ describe('Calculator', function() {
       assert.equal(calculator.divide(12, 4), 3);
     });
     it('should throw error for zero divider', function() {
-      assert.throws(function() {
+      assert.throws(() => {
         return calculator.divide(12, 0);
       }, Error, 'zero is not allowed as divider');
     });
@@ -41,7 +40,7 @@ describe('Calculator', function() {
       assert.equal(calculator.remainder(12, 5), 2);
     });
     it('should throw error for zero divider', function() {
-      assert.throws(function() {
+      assert.throws(() => {
         return calculator.remainder(12, 0);
       }, Error, 'zero is not allowed as divider');
     });
